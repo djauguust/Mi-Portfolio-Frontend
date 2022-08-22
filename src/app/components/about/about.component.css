@@ -1,8 +1,20 @@
-#column-1{
-    max-width: 220px;
+.destacado{
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    display: flex;
 }
 
-.destacado{
-    
-    text-align: center;
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 55px 165px 30px auto;
+    grid-auto-rows: auto;
+}
+
+.box{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
