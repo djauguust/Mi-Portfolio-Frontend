@@ -17,7 +17,7 @@
     border-width: 1px;
     display: grid;
     grid-auto-rows: auto;
-    grid-template-columns: 55px 165px 30px auto;
+    grid-template-columns: 55px 155px 30px auto;
 }
 
 .box {
