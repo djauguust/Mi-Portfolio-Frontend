@@ -1,20 +1,27 @@
+.vicio{
+    height: 20px;
+}
 .destacado{
     font-weight: bold;
     text-align: center;
     align-items: center;
     display: flex;
+    font-size: small;
+    justify-content: center;
 }
-
 
 .wrapper{
+    border-color: gray;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
     display: grid;
-    grid-template-columns: 55px 165px 30px auto;
     grid-auto-rows: auto;
+    grid-template-columns: 55px 165px 30px auto;
 }
 
-.box{
-    grid-column-start: 4;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
+.box {
+    grid-column: 4;
+    grid-row: 1 / 3;
+    
+  }
