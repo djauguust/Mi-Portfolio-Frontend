@@ -1,4 +1,6 @@
+import { compileNgModule } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import { ToggleService } from "src/app/services/toggle.service";
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(
+    private toggleService:ToggleService,
+  ) { }
+  
   ngOnInit(): void {
   }
 
+  toggleLogIn(){
+    this.toggleService.toggleLogIn();
+  }
 }

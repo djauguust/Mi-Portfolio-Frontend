@@ -18,7 +18,9 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" 
                 width="40" height="35" hspace="10">
         </a>
-        <button class="btn btn-outline-success" type="submit">Ingresar</button>
+        <app-log-in
+          (btnClick)="toggleLogIn()"
+        ></app-log-in>
       </form>
     </div>
 </nav>
