@@ -12,7 +12,7 @@ export class ToggleService {
 
   toggleLogIn():void{
     this.showLogIn = !this.showLogIn;
-    this.subjet.next(this.showLogIn);
+    this.subjet.next(this.showLogIn);  // No sé que hace esta línea pero funciona
   }
 
   onToggle():Observable<any>{
