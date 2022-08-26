@@ -1,7 +1,24 @@
 <!-- Aqui hay que ver que la imagen sea traída del back -->
-<div id="padre">
-    <img class="bann" src="../../../assets/banner/banner.jpg" 
+<div    
+    id="padre"
+>
+    <img 
+        class="bann" 
+        src="../../../assets/banner/banner.jpg" 
     >
+    <div 
+        id="hijo"
+    >
+        <div 
+            id="pencil"
+            *ngIf="showLogIn"
+        >
+            <img 
+                class="pencil2"
+                src="../../../assets/lapiz.jpg"
+            >
+        </div>
+    </div>
     <div id="hijo">
         <img 
         class="photo"
