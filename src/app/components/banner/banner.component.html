@@ -15,12 +15,24 @@
             src="../../../assets/lapiz.svg"
         >
     </div>
+    <div>
+    </div>
     <div id="hijo">
         <img 
         class="photo"
         [style.filter]="'brightness(' + retornarContraste() + ')'"
         src="../../../assets/perfil/perfil.jpg"
         >
+    </div>
+    <div
+        class="pencil3"
+        *ngIf="showLogIn"
+    >
+        <img 
+            class="pencil2"
+            src="../../../assets/lapiz.svg"
+        >
+
     </div>
 </div>
 <div id="hijo-segundo">
