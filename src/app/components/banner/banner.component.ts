@@ -22,10 +22,6 @@ export class BannerComponent implements OnInit {
   }
 
   retornarContraste(){
-    if(this.showLogIn){
-      return '20%'
-    }else{
-      return ''
-    }
+    return this.showLogIn ? '20%' : ''
   }
 }
