@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Subscription } from 'rxjs'
 import { ToggleService } from 'src/app/services/toggle.service';
 
@@ -9,9 +9,9 @@ import { ToggleService } from 'src/app/services/toggle.service';
 })
 export class BannerComponent implements OnInit {
 
-  showLogIn: boolean = false;
+  showLogIn: boolean = true;
   subscription?: Subscription;
-
+  
   constructor(
     private toggleService:ToggleService
   ) { 
@@ -21,4 +21,11 @@ export class BannerComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  retornarContraste(){
+    if(this.showLogIn){
+      return '20%'
+    }else{
+      return ''
+    }
+  }
 }

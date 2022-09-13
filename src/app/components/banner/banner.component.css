@@ -9,14 +9,14 @@
 
 .pencil{
     position: absolute;
-    top: 2000px;
+    top: 265px;
+    right: 10px;
 }
 
 .pencil2 {
     height: 20px;
     margin-right:0;
     width: 20px;
-
 }
 
 .photo{

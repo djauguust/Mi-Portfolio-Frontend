@@ -7,21 +7,18 @@
         src="../../../assets/banner/banner.jpg" 
     >
     <div 
-        id="hijo"
+        class="pencil"
+        *ngIf="showLogIn"
     >
-        <div 
-            id="pencil"
-            *ngIf="showLogIn"
+        <img 
+            class="pencil2"
+            src="../../../assets/lapiz.svg"
         >
-            <img 
-                class="pencil2"
-                src="../../../assets/lapiz.jpg"
-            >
-        </div>
     </div>
     <div id="hijo">
         <img 
         class="photo"
+        [style.filter]="'brightness(' + retornarContraste() + ')'"
         src="../../../assets/perfil/perfil.jpg"
         >
     </div>
