@@ -19,6 +19,12 @@
     width: 20px;
 }
 
+.pencil4{
+    position: absolute;
+    top:400px;
+    right:65px;
+}
+
 .photo{
     border: solid #F8F9FA 5px;
     border-radius: 100%;
