@@ -18,9 +18,18 @@
     <div id="hijo">
         <img 
         class="photo"
-        [style.filter]="'brightness(' + retornarContraste() + ')'"
+        *ngIf="showLogIn; else elseBlock"
+        (mouseover)="brillo = '20%'"
+        (mouseout)="brillo = ''"
+        [style.filter]="'brightness(' + brillo + ')'"
         src="../../../assets/perfil/perfil.jpg"
         >
+        <ng-template #elseBlock>
+            <img 
+            class="photo"
+            src="../../../assets/perfil/perfil.jpg"
+            >
+        </ng-template>
     </div>
     <div
         class="pencil3"

@@ -11,6 +11,7 @@ export class BannerComponent implements OnInit {
 
   showLogIn: boolean = true;
   subscription?: Subscription;
+  brillo: String = '';
   
   constructor(
     private toggleService:ToggleService
@@ -24,4 +25,8 @@ export class BannerComponent implements OnInit {
   retornarContraste(){
     return this.showLogIn ? '20%' : ''
   }
+  retornarContraste2(){
+    return this.showLogIn ? 'brightness(' + '20%' + ')' : 'brightness(' + '' + ')'
+  }
 }
+
