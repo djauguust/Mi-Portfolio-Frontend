@@ -1,7 +1,16 @@
 <button 
+    *ngIf="!showLogIn"
     class="btn btn-outline-success" 
     type="button"
     (click)="onClick()"
 >
     Ingresar
+</button>
+<button 
+    *ngIf="showLogIn"
+    class="btn btn-danger" 
+    type="button"
+    (click)="onClick()"
+>
+    Salir
 </button>
