@@ -22,11 +22,5 @@ export class BannerComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  retornarContraste(){
-    return this.showLogIn ? '20%' : ''
-  }
-  retornarContraste2(){
-    return this.showLogIn ? 'brightness(' + '20%' + ')' : 'brightness(' + '' + ')'
-  }
 }
 
