@@ -12,6 +12,9 @@ export class BannerComponent implements OnInit {
   showLogIn: boolean = true;
   subscription?: Subscription;
   brillo: String = '';
+  apellido: String ='Brito';
+  nombre: String = 'Augusto Ismael';
+  titulo: String = 'Full Stack Developer Jr';
   
   constructor(
     private toggleService:ToggleService
